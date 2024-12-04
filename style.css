@@ -1,0 +1,73 @@
+/* Estilo geral */
+body {
+    background-color: rgba(199, 153, 212, 0.87);
+    color: rgb(33, 33, 33);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgb(93, 51, 140);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Seção principal */
+section {
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chamada-texto h1 {
+    color: rgb(93, 51, 140);
+    text-align: center;
+}
+
+.chamada-texto p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Vídeo incorporado */
+iframe {
+    display: block;
+    margin: 20px auto;
+    border: none;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Categorias */
+.categorias h2 {
+    text-align: center;
+    color: rgb(93, 51, 140);
+}
+
+.categorias_videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.categorias_videos img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.categorias_videos img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
